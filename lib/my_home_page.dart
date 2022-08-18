@@ -25,11 +25,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Json Veri'),
+          title: const Center(child: Text('Flutter Cloud Wallpaper')),
         ),
         body: IndexedStack(index: _pageIndex, children: _pageList),
         bottomNavigationBar: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
+          padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
           child: GNav(
             onTabChange: (valueIndex) {
               setState(() {
@@ -37,13 +37,13 @@ class _MyHomePageState extends State<MyHomePage> {
               });
             },
             gap: 8,
-            padding: EdgeInsets.symmetric(
-                horizontal: 20, vertical: 12), // navigation bar padding
+            padding: const EdgeInsets.symmetric(
+                horizontal: 24, vertical: 12), // navigation bar padding
             activeColor: Colors.white,
             tabBackgroundColor:
                 Colors.deepOrange, // selected tab background color
 
-            tabs: [
+            tabs: const [
               GButton(
                 icon: Icons.home_outlined,
                 text: 'Home',

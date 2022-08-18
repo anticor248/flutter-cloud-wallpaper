@@ -16,6 +16,7 @@ class _WallpapersThumbPageState extends State<WallpapersThumbPage> {
   UserJsonService _jsonService = UserJsonService();
 
   List<UsersModelJsonData?> usersJsonData = [];
+
   @override
   void initState() {
     super.initState();
@@ -58,8 +59,8 @@ class _WallpapersThumbPageState extends State<WallpapersThumbPage> {
                 ),
               );
             },
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3),
           ),
         ),
       ),
