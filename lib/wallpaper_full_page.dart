@@ -26,7 +26,7 @@ class WallpaperFullPage extends StatelessWidget {
                     pathBackgroundColor: Colors.deepOrange));
           },
           errorBuilder: (context, error, stackTrace) =>
-              const Text('Some errors occurred!'),
+              const Text('Some errors occurred!!'),
         ),
       ),
     );
